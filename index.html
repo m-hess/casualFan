@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title>Display a map</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body {
+            margin:0; padding:0;
+        }
+        @font-face {
+            src: url('font/Elevation.ttf');
+        }
+        h3{
+
+        }
+        p{
+
+        }
+        #map {
+            position:absolute; top:0; bottom:0; width:100%;
+        }
+        .marker {
+            /* background-image: url(icon/goldenStateWarriors.png); */
+            background-size: cover;
+            width: 60px;
+            height: 60px;
+            display: block;
+            border: solid;
+            border-radius: 50%;
+            border-color: #777777;
+            cursor: pointer;
+            padding: 0;
+        }
+        .mapboxgl-popup {
+            max-width: 200px;
+        }
+        .mapboxgl-popup-content {
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
+</head>
+<body>
+<div id='map'></div>
+<script src="map.js"></script>
+</body>
+</html>
